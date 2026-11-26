@@ -1,0 +1,37 @@
+2026-11-24 20:56:01,648 INFO [library.security] event=REGISTER outcome=SUCCESS user=student1 ip=- details=student account created
+2026-11-24 20:56:01,751 INFO [library.security] event=REGISTER outcome=SUCCESS user=student2 ip=- details=student account created
+2026-11-24 20:56:01,751 INFO [library.security] event=BOOK_ADD outcome=SUCCESS user=- ip=- details=CS101 'Python Basics' qty=5
+2026-11-24 20:56:01,764 INFO [library.security] event=BOOK_ADD outcome=SUCCESS user=- ip=- details=CS102 'Data Structures in C' qty=3
+2026-11-24 20:56:01,766 INFO [library.security] event=BOOK_ADD outcome=SUCCESS user=- ip=- details=CS201 'Secure Coding in C and C++' qty=2
+2026-11-24 20:56:01,766 INFO [library.security] event=BOOK_ADD outcome=SUCCESS user=- ip=- details=CS305 'Machine Learning Fundamentals' qty=4
+2026-11-24 20:56:01,766 INFO [library.security] event=BOOK_ADD outcome=SUCCESS user=- ip=- details=MATH101 'Engineering Mathematics' qty=6
+2026-11-24 20:56:01,780 INFO [library.security] event=BOOK_ADD outcome=SUCCESS user=- ip=- details=EC110 'Digital Electronics' qty=3
+2026-11-24 20:56:01,782 INFO [library.security] event=BOOK_ADD outcome=SUCCESS user=- ip=- details=PHY120 'Concepts of Physics' qty=4
+2026-11-24 20:56:01,786 INFO [library.security] event=BOOK_ADD outcome=SUCCESS user=- ip=- details=MGT200 'Principles of Management' qty=1
+2026-11-24 20:57:26,212 WARNING [library.security] event=REGISTER outcome=FAILURE user=- ip=127.0.0.1 details=validation failed: password
+2026-11-24 20:57:37,484 INFO [library.security] event=REGISTER outcome=SUCCESS user=akash ip=127.0.0.1 details=student account created
+2026-11-24 20:57:39,340 INFO [library.security] event=LOGIN outcome=SUCCESS user=akash ip=127.0.0.1 details=
+2026-11-24 21:00:17,750 INFO [library.security] http_404 GET /favicon.ico
+2026-11-24 21:00:17,779 INFO [library.security] http_404 GET /apple-touch-icon.png
+2026-11-24 21:00:17,786 INFO [library.security] http_404 GET /apple-touch-icon-precomposed.png
+2026-11-24 21:08:24,591 INFO [library.security] event=LOGOUT outcome=SUCCESS user=akash ip=127.0.0.1 details=
+2026-11-25 10:25:16,798 WARNING [library.security] event=REGISTER outcome=FAILURE user=student1 ip=- details=duplicate account details
+2026-11-25 10:25:16,889 WARNING [library.security] event=REGISTER outcome=FAILURE user=student2 ip=- details=duplicate account details
+2026-11-25 10:25:16,905 WARNING [library.security] event=BOOK_ADD outcome=FAILURE user=- ip=- details=duplicate code CS101
+2026-11-25 10:25:16,905 WARNING [library.security] event=BOOK_ADD outcome=FAILURE user=- ip=- details=duplicate code CS102
+2026-11-25 10:25:16,909 WARNING [library.security] event=BOOK_ADD outcome=FAILURE user=- ip=- details=duplicate code CS201
+2026-11-25 10:25:16,909 WARNING [library.security] event=BOOK_ADD outcome=FAILURE user=- ip=- details=duplicate code CS305
+2026-11-25 10:25:16,911 WARNING [library.security] event=BOOK_ADD outcome=FAILURE user=- ip=- details=duplicate code MATH101
+2026-11-25 10:25:16,913 WARNING [library.security] event=BOOK_ADD outcome=FAILURE user=- ip=- details=duplicate code EC110
+2026-11-25 10:25:16,913 WARNING [library.security] event=BOOK_ADD outcome=FAILURE user=- ip=- details=duplicate code PHY120
+2026-11-25 10:25:16,915 WARNING [library.security] event=BOOK_ADD outcome=FAILURE user=- ip=- details=duplicate code MGT200
+2026-11-25 10:25:50,292 INFO [library.security] event=LOGIN outcome=SUCCESS user=librarian1 ip=127.0.0.1 details=
+2026-11-25 10:26:02,211 INFO [library.security] event=BOOK_ADD_COPIES outcome=SUCCESS user=librarian1 ip=127.0.0.1 details=CS101 +1 -> 6
+2026-11-25 10:26:05,897 INFO [library.security] event=BOOK_DELETE outcome=SUCCESS user=librarian1 ip=127.0.0.1 details=CS101 'Python Basics'
+2026-11-25 10:26:16,515 INFO [library.security] event=BOOK_ADD_COPIES outcome=SUCCESS user=librarian1 ip=127.0.0.1 details=CS102 +2 -> 5
+2026-11-25 10:34:27,585 INFO [library.security] event=BOOK_ISSUE outcome=SUCCESS user=librarian1 ip=127.0.0.1 details=CS102 -> 2301730184 due 2026-12-09
+2026-11-25 10:34:38,455 WARNING [library.security] event=BOOK_ISSUE outcome=FAILURE user=librarian1 ip=127.0.0.1 details=This student already has a copy of this book.
+2026-11-25 10:34:41,519 WARNING [library.security] event=BOOK_ISSUE outcome=FAILURE user=librarian1 ip=127.0.0.1 details=No book with that code.
+2026-11-25 10:34:59,979 INFO [library.security] event=BOOK_ISSUE outcome=SUCCESS user=librarian1 ip=127.0.0.1 details=CS201 -> 2301730184 due 2026-12-09
+2026-11-25 10:35:11,786 INFO [library.security] event=BOOK_ISSUE outcome=SUCCESS user=librarian1 ip=127.0.0.1 details=CS305 -> 2301730184 due 2026-12-09
+2026-11-25 10:35:28,544 WARNING [library.security] event=BOOK_ISSUE outcome=FAILURE user=librarian1 ip=127.0.0.1 details=Student already has 3 books (limit 3).
